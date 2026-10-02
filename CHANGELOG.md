@@ -1,29 +1,14 @@
 # Changelog
 
-## 1.8.9 — 2026-10-01 (web; affects the desktop app)
+## web — 2026-10-02
 
-**Reopening picks up where you left off**
-- Opening the desktop app again shows the last song in the player bar, **paused** at the spot you
-  left it, with its progress on the seek bar. Press Play and it carries on from there — nothing plays
-  on its own. Before, the app opened with an empty player, and the last song only came back if you
-  pressed Play within 20 minutes.
-- Pausing now saves your exact spot right away, instead of up to five seconds earlier.
-- Only the desktop app does this; the website in a browser is unchanged.
-
-## 1.8.8 — 2026-10-01 (web)
-
-**Why the bump:** the mouse-wheel fix in 1.8.2 traded one stuck-scroll bug for another — hovering a
-row while scrolling down the page could trap the wheel sideways until the row ran out of cards, and
-releasing a drag or wheel gesture mid-card snapped back instantly instead of settling smoothly.
-
-**Rows no longer trap the scroll wheel**
-- Scrolling down the page with the cursor over an artist/album row (or Quick Picks, Statuses, Shorts)
-  no longer gets diverted into scrolling that row sideways — the page now keeps scrolling past it like
-  any other content. Dragging a row and the hover arrows still move it sideways with a mouse; an actual
-  sideways gesture (trackpad swipe, tilt wheel) still scrolls the row too.
-- Letting go of a drag (or a sideways trackpad scroll) mid-card now leaves the row exactly where you
-  stopped instead of snapping it onto the nearest card — the snap-back bounce is gone entirely. The
-  paging chevrons still land precisely on a card edge, since that's a deliberate jump.
+**Hover menu on every tile**
+- Hover any album, artist or playlist tile and a **⋮** appears in its corner — the same idea as the
+  **⋮** on a song, but for the whole set. Choose **Play**, **Shuffle**, **Play next**, **Add to queue**,
+  **Start radio**, or (on an album) **Go to artist** without opening the page first.
+- Song tiles (Trending Songs, New Songs, Keep Listening, and every other song rail) now get the same
+  **⋮**, matching the one already on song rows.
+- It respects your content filters: an artist or album they hide can't be played or queued from a tile.
 
 ## Desktop 1.2.4 — 2026-10-01
 
